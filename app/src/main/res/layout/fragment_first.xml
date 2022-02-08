@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment" >
+
+    <EditText
+            android:id="@+id/textentry"
+            android:layout_width="0dp"
+            android:inputType="text"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/sendarrow"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_weight="90"
+            android:autofillHints="a"
+            tools:ignore="LabelFor" />
+
+    <ImageButton
+        android:id="@+id/sendarrow"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:src="@drawable/sendarrow"
+        android:layout_weight="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/textdisplay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        app:layout_constraintBottom_toTopOf="@+id/textentry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
